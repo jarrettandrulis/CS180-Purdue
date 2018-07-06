@@ -1,0 +1,21 @@
+import javax.swing.*;
+/**
+ *
+ * CS180 - Lab 02
+ *
+ * Takes a scrambled string and decodes it
+ *
+ * @author Jarrett Andrulis, jandruli@purdue.edu, Section B09
+ *
+ * @version 8/30/16
+ *
+ */
+class WordFixGUI
+{
+	public static void main(String[] args)
+	{
+		String scrambledString = JOptionPane.showInputDialog(null, "Enter the word to be deciphered");
+		String finalString = scrambledString.charAt(scrambledString.length()-1)+scrambledString.substring(1, scrambledString.indexOf("*"))+scrambledString.substring(scrambledString.indexOf("*"),scrambledString.length()-2)+scrambledString.charAt(0) );
+
+	}
+}
